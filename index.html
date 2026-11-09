@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wedding RSVP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2ea;--card:#fbfcf9;--ink:#1d3b3f;--muted:#5d7270;--sage:#9caf88;--sage-d:#6f8560;--teal:#1f6f78;--teal-d:#15555c;--line:#d5ded0;--ok:#2f7d5b;--err:#b0473c;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14201f;--card:#1b2b2a;--ink:#e8efe6;--muted:#9db3ad;--sage:#8fa57c;--sage-d:#a9bf96;--teal:#4fb0b8;--teal-d:#6cc4cb;--line:#2f4442;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14201f;--card:#1b2b2a;--ink:#e8efe6;--muted:#9db3ad;--sage:#8fa57c;--sage-d:#a9bf96;--teal:#4fb0b8;--teal-d:#6cc4cb;--line:#2f4442;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:radial-gradient(circle at 8% 25%,rgba(156,175,136,.22),transparent 38%),radial-gradient(circle at 92% 75%,rgba(31,111,120,.14),transparent 38%),var(--bg);color:var(--ink);font-family:'Jost',system-ui,sans-serif;font-weight:300;line-height:1.6}
+.hero{text-align:center;padding:84px 20px 70px;color:#fff;position:relative;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Cg fill='white' fill-opacity='.3'%3E%3Cpath d='M8 0C40 70 60 150 120 275' fill='none' stroke='white' stroke-opacity='.35' stroke-width='2'/%3E%3Cellipse cx='34' cy='42' rx='8' ry='20' transform='rotate(-30 34 42)'/%3E%3Cellipse cx='62' cy='60' rx='8' ry='20' transform='rotate(40 62 60)'/%3E%3Cellipse cx='50' cy='100' rx='9' ry='22' transform='rotate(-35 50 100)'/%3E%3Cellipse cx='82' cy='118' rx='9' ry='22' transform='rotate(40 82 118)'/%3E%3Cellipse cx='76' cy='165' rx='9' ry='22' transform='rotate(-35 76 165)'/%3E%3Cellipse cx='108' cy='182' rx='9' ry='22' transform='rotate(40 108 182)'/%3E%3Cellipse cx='104' cy='228' rx='8' ry='20' transform='rotate(-35 104 228)'/%3E%3Cellipse cx='132' cy='240' rx='8' ry='20' transform='rotate(40 132 240)'/%3E%3C/g%3E%3C/svg%3E") left -8px top 0/clamp(120px,28vw,210px) no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Cg transform='translate(200 0) scale(-1 1)' fill='white' fill-opacity='.3'%3E%3Cpath d='M8 0C40 70 60 150 120 275' fill='none' stroke='white' stroke-opacity='.35' stroke-width='2'/%3E%3Cellipse cx='34' cy='42' rx='8' ry='20' transform='rotate(-30 34 42)'/%3E%3Cellipse cx='62' cy='60' rx='8' ry='20' transform='rotate(40 62 60)'/%3E%3Cellipse cx='50' cy='100' rx='9' ry='22' transform='rotate(-35 50 100)'/%3E%3Cellipse cx='82' cy='118' rx='9' ry='22' transform='rotate(40 82 118)'/%3E%3Cellipse cx='76' cy='165' rx='9' ry='22' transform='rotate(-35 76 165)'/%3E%3Cellipse cx='108' cy='182' rx='9' ry='22' transform='rotate(40 108 182)'/%3E%3Cellipse cx='104' cy='228' rx='8' ry='20' transform='rotate(-35 104 228)'/%3E%3Cellipse cx='132' cy='240' rx='8' ry='20' transform='rotate(40 132 240)'/%3E%3C/g%3E%3C/svg%3E") right -8px top 0/clamp(120px,28vw,210px) no-repeat,radial-gradient(circle at 50% 30%,rgba(255,255,255,.25),transparent 60%),linear-gradient(160deg,var(--sage) 0%,var(--teal) 100%)}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:28px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0}
+.eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:.75rem;opacity:.9}
+h1{font-family:"Dragon's Coming",'Great Vibes','Brush Script MT',cursive;font-weight:400;font-size:clamp(3.2rem,12vw,5.8rem);margin:.15em 0 .05em;line-height:1.1;text-shadow:0 2px 14px rgba(0,0,0,.18)}.orn{font-size:1.5rem;opacity:.85;margin:4px 0 2px;letter-spacing:.5em}
+.hero p{margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem}
+.wrap{max-width:560px;margin:0 auto;padding:12px 18px 56px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 24px;margin-top:20px;box-shadow:0 8px 30px rgba(31,111,120,.08)}
+h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.7rem;margin:0 0 6px;color:var(--teal)}
+.sub{color:var(--muted);margin:0 0 18px}
+label{display:block;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+input,textarea,select{width:100%;font:inherit;font-weight:400;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--teal);outline-offset:1px}
+button{font:inherit;font-weight:500;cursor:pointer;border:0;border-radius:999px;padding:12px 26px;background:var(--teal);color:#fff;margin-top:18px;transition:background .2s}
+button:hover{background:var(--teal-d)}button.ghost{background:transparent;color:var(--teal);border:1px solid var(--teal);padding:6px 14px;margin:0}
+button.sm{padding:6px 14px;margin:0;font-size:.85rem}
+.seats{display:flex;align-items:center;gap:14px;background:linear-gradient(90deg,rgba(156,175,136,.22),rgba(31,111,120,.14));border-radius:14px;padding:16px 18px;margin:8px 0 4px}
+.seats b{font-family:'Cormorant Garamond',serif;font-size:2.8rem;line-height:1;color:var(--teal)}
+.choice{display:flex;gap:10px}.choice label{flex:1;margin:0;text-transform:none;letter-spacing:0;font-size:1rem;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center;cursor:pointer}
+.choice input{display:none}.choice label:has(input:checked){background:var(--teal);color:#fff;border-color:var(--teal)}
+.msg{margin-top:14px;font-weight:400}.ok{color:var(--ok)}.err{color:var(--err)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.stat{background:var(--bg);border-radius:12px;padding:12px;text-align:center}.stat b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--teal);line-height:1.1}.stat span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--line);white-space:nowrap}th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+td input{padding:6px 8px;width:64px}.code{font-family:ui-monospace,monospace;letter-spacing:.1em;color:var(--sage-d);font-weight:500}
+.pill{padding:2px 10px;border-radius:99px;font-size:.78rem;background:var(--line)}.pill.y{background:var(--sage);color:#17301f}.pill.n{background:#e4c9c4;color:#5a1f18}
+.hide{display:none}.foot{text-align:center;color:var(--muted);font-size:.85rem;margin-top:28px}
+.card{position:relative}.card:before{content:"";position:absolute;inset:6px;border:1px solid var(--line);border-radius:13px;pointer-events:none}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+<header class="hero">
+  <div class="eyebrow">Together with our families</div>
+  <h1 id="names">Bride &amp; Groom</h1>
+  <div class="orn">❦</div>
+  <p>Kindly reply — we would love to celebrate with you</p>
+</header>
+<main class="wrap">
+  <section class="card" id="guest">
+    <h2>Find your invitation</h2>
+    <p class="sub">Enter the code printed on your invitation.</p>
+    <label for="code">Invitation code</label>
+    <input id="code" maxlength="12" autocomplete="off" placeholder="e.g. K7M2Q" style="text-transform:uppercase">
+    <button id="find">Continue</button>
+    <div class="msg" id="findmsg"></div>
+    <div id="form" class="hide">
+      <hr style="border:0;border-top:1px solid var(--line);margin:22px 0 14px">
+      <p class="sub" style="margin:0">Dear <b id="gname"></b>,</p>
+      <div class="seats"><b id="gseats">0</b><span>seat(s) reserved in your honour</span></div>
+      <label>Will you attend?</label>
+      <div class="choice">
+        <label><input type="radio" name="att" value="yes" checked>Accept</label>
+        <label><input type="radio" name="att" value="no">Decline</label>
+      </div>
+      <div id="cntwrap"><label for="cnt">Number of guests attending</label><select id="cnt"></select></div>
+      <label for="note">Message for the couple (optional)</label>
+      <textarea id="note" rows="3"></textarea>
+      <button id="send">Send RSVP</button>
+      <div class="msg" id="sendmsg"></div>
+    </div>
+  </section>
+
+  <section class="card hide" id="admin">
+    <h2>Host dashboard</h2>
+    <p class="sub">Only you can see this. Edit seats per invitation anytime.</p>
+    <label for="cname">Couple names (shown at top)</label>
+    <div style="display:flex;gap:8px"><input id="cname" placeholder="Anna &amp; Marco"><button class="sm" id="savenames" style="margin:0">Save</button></div>
+    <div class="stats"><div class="stat"><b id="sInv">0</b><span>Invitations</span></div><div class="stat"><b id="sSeats">0</b><span>Seats given</span></div><div class="stat"><b id="sYes">0</b><span>Confirmed</span></div></div>
+    <label for="bulk">Add guests — one per line: Name, seats</label>
+    <textarea id="bulk" rows="4" placeholder="Santos Family, 4&#10;Tita Cora, 2"></textarea>
+    <button id="addbulk" class="sm" style="margin-top:10px">Add invitations</button>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button class="sm" id="xlsx">Export Excel</button><button class="sm" id="docx">Export Word</button><button class="sm ghost" id="logout">Sign out</button></div>
+    <div class="msg" id="adminmsg"></div>
+    <div class="tw" style="margin-top:16px"><table><thead><tr><th>Guest</th><th>Code</th><th>Seats</th><th>Reply</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+  </section>
+  <p class="foot">With love &amp; gratitude<br><a href="#" id="login" style="color:var(--muted);font-size:.75rem">Host sign in</a></p>
+</main>
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import {getFirestore,doc,getDoc,setDoc,updateDoc,deleteDoc,collection,onSnapshot} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+/* ====== SETUP: paste your Firebase values and your Google email ====== */
+const firebaseConfig={apiKey:"PASTE_API_KEY",authDomain:"PASTE_PROJECT.firebaseapp.com",projectId:"PASTE_PROJECT_ID",appId:"PASTE_APP_ID"};
+const ADMIN_EMAIL="your.email@gmail.com"; // must match the email in firestore.rules
+/* ===================================================================== */
+
+const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);
+const $=id=>document.getElementById(id);
+let invites={},rsvps={},current=null,unsubs=[];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function note(el,t,c){el.textContent=t;el.className='msg '+(c||'')}
+function newCode(){const a='ABCDEFGHJKMNPQRSTUVWXYZ23456789';let s='';for(let i=0;i<6;i++)s+=a[Math.floor(Math.random()*a.length)];return s}
+
+onSnapshot(doc(db,'settings','site'),s=>{const d=s.exists()&&s.data();if(d&&d.names)$('names').textContent=d.names},()=>{});
+
+$('login').onclick=async e=>{e.preventDefault();try{await signInWithPopup(auth,new GoogleAuthProvider())}catch(x){note($('findmsg'),'Sign-in cancelled or not allowed on this domain.','err')}};
+$('logout').onclick=()=>signOut(auth);
+onAuthStateChanged(auth,u=>{
+  unsubs.forEach(f=>f());unsubs=[];
+  const admin=!!u&&u.email===ADMIN_EMAIL;
+  $('admin').classList.toggle('hide',!admin);
+  if(!admin)return;
+  unsubs.push(onSnapshot(collection(db,'invites'),s=>{invites={};s.docs.forEach(d=>invites[d.id]=d.data());render()},()=>note($('adminmsg'),'Permission denied. Check firestore.rules.','err')));
+  unsubs.push(onSnapshot(collection(db,'rsvps'),s=>{rsvps={};s.docs.forEach(d=>rsvps[d.id]=d.data());render()},()=>{}));
+});
+
+function sorted(){return Object.keys(invites).sort((a,b)=>invites[a].name.localeCompare(invites[b].name))}
+function render(){
+  let seats=0,yes=0;
+  $('rows').innerHTML=sorted().map(id=>{const i=invites[id],r=rsvps[id];seats+=+i.seats||0;if(r&&r.attending)yes+=+r.count||0;
+    const st=!r?'<span class="pill">Pending</span>':r.attending?`<span class="pill y">Yes · ${r.count}</span>`:'<span class="pill n">Declined</span>';
+    return `<tr><td title="${esc(r&&r.note||'')}">${esc(i.name)}</td><td class="code">${id}</td><td><input type="number" min="0" max="20" value="${i.seats}" data-seat="${id}"></td><td>${st}</td><td><button class="ghost" data-del="${id}">Remove</button></td></tr>`}).join('')||'<tr><td colspan="5" style="color:var(--muted)">No invitations yet — add some above.</td></tr>';
+  $('sInv').textContent=Object.keys(invites).length;$('sSeats').textContent=seats;$('sYes').textContent=yes;
+}
+$('rows').addEventListener('change',async e=>{const id=e.target.dataset.seat;if(!id)return;
+  const n=Math.max(0,Math.min(20,parseInt(e.target.value)||0));
+  try{await updateDoc(doc(db,'invites',id),{seats:n});note($('adminmsg'),'Seats updated.','ok')}catch(x){note($('adminmsg'),'Could not update seats.','err')}});
+$('rows').addEventListener('click',async e=>{const id=e.target.dataset.del;if(!id||!confirm('Remove this invitation?'))return;
+  try{await deleteDoc(doc(db,'invites',id));await deleteDoc(doc(db,'rsvps',id)).catch(()=>{})}catch(x){note($('adminmsg'),'Could not remove.','err')}});
+$('addbulk').onclick=async()=>{
+  const lines=$('bulk').value.split('\n').map(l=>l.trim()).filter(Boolean);let n=0;
+  for(const l of lines){const p=l.split(',').map(s=>s.trim());let code=newCode();
+    if(p.length>=3&&/^[A-Za-z0-9]{4,12}$/.test(p[p.length-1]))code=p.pop().toUpperCase();
+    const seats=parseInt(p.pop())||1;const name=p.join(', ')||l;
+    try{await setDoc(doc(db,'invites',code),{name,seats});n++}catch(x){}}
+  $('bulk').value='';note($('adminmsg'),n+' invitation(s) added.','ok')};
+$('savenames').onclick=async()=>{const v=$('cname').value.trim();if(!v)return;
+  try{await setDoc(doc(db,'settings','site'),{names:v});note($('adminmsg'),'Names saved.','ok')}catch(x){note($('adminmsg'),'Could not save.','err')}};
+
+function data(){return sorted().map(id=>{const i=invites[id],r=rsvps[id];return{Guest:i.name,Code:id,'Seats allotted':+i.seats||0,Reply:!r?'Pending':r.attending?'Accepted':'Declined','Attending':r&&r.attending?+r.count:0,Message:r&&r.note||''}})}
+function totals(d){const t=k=>d.filter(x=>x.Reply===k).length;return[['Invitations',d.length],['Seats allotted',d.reduce((a,x)=>a+x['Seats allotted'],0)],['Guests attending',d.reduce((a,x)=>a+x.Attending,0)],['Accepted invitations',t('Accepted')],['Declined invitations',t('Declined')],['Pending invitations',t('Pending')]]}
+$('xlsx').onclick=()=>{const d=data(),wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet([['RSVP Summary'],...totals(d)]),'Summary');
+  XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(d),'Guests');XLSX.writeFile(wb,'wedding-rsvp.xlsx')};
+$('docx').onclick=()=>{const d=data(),keys=Object.keys(d[0]||{Guest:1});
+  const html=`<html xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><style>body{font-family:Georgia}th{background:#1f6f78;color:#fff}td,th{border:1px solid #9caf88;padding:5px}table{border-collapse:collapse}</style></head><body><h1>${esc($('names').textContent)} — RSVP Summary</h1><table>${totals(d).map(t=>`<tr><td><b>${t[0]}</b></td><td>${t[1]}</td></tr>`).join('')}</table><br><table><tr>${keys.map(k=>`<th>${k}</th>`).join('')}</tr>${d.map(r=>`<tr>${keys.map(k=>`<td>${esc(r[k])}</td>`).join('')}</tr>`).join('')}</table></body></html>`;
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+html],{type:'application/msword'}));a.download='wedding-rsvp.doc';a.click()};
+
+$('find').onclick=async()=>{
+  const c=$('code').value.trim().toUpperCase();if(!c)return;
+  try{const s=await getDoc(doc(db,'invites',c));
+    if(!s.exists()){$('form').classList.add('hide');note($('findmsg'),'We could not find that code. Please check your invitation.','err');return}
+    current={id:c,...s.data()};note($('findmsg'),'');
+    $('gname').textContent=current.name;$('gseats').textContent=current.seats;
+    $('cnt').innerHTML=Array.from({length:current.seats},(_,i)=>`<option>${i+1}</option>`).join('');
+    $('cnt').value=current.seats;
+    const r=await getDoc(doc(db,'rsvps',c)).catch(()=>null);
+    if(r&&r.exists()){const d=r.data();document.querySelector(`input[name=att][value=${d.attending?'yes':'no'}]`).checked=true;if(d.attending)$('cnt').value=Math.min(d.count,current.seats);$('note').value=d.note||''}
+    toggle();$('form').classList.remove('hide');
+  }catch(x){note($('findmsg'),'Something went wrong. Please try again.','err')}};
+function toggle(){$('cntwrap').classList.toggle('hide',document.querySelector('input[name=att]:checked').value==='no')}
+document.querySelectorAll('input[name=att]').forEach(r=>r.onchange=toggle);
+$('send').onclick=async()=>{
+  const yes=document.querySelector('input[name=att]:checked').value==='yes';
+  const count=yes?Math.min(parseInt($('cnt').value)||1,current.seats):0;
+  try{await setDoc(doc(db,'rsvps',current.id),{attending:yes,count,note:$('note').value.slice(0,500),name:current.name});
+    note($('sendmsg'),yes?`Thank you! We have reserved ${count} seat(s) for you.`:'Thank you for letting us know. You will be missed.','ok')}
+  catch(x){note($('sendmsg'),'Could not send your reply. Please try again.','err')}};
+</script>
+</body>
+</html>
